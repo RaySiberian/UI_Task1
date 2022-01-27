@@ -10,7 +10,6 @@ public class LevelManager : MonoBehaviour
     public static LevelManager Instance { get; private set; }
     public int currentLevelId;
     private Level currentLevel;
-    
     private void Awake()
     {
         if (!Instance)
@@ -29,6 +28,7 @@ public class LevelManager : MonoBehaviour
     
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             ShowWinPanel(true);
